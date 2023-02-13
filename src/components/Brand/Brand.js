@@ -116,19 +116,21 @@ class Component extends React.Component {
         <Link
           className={classes.link}
           href={link}
-          title="Soul Extract logo"
+          title="Electoverts Logo"
           onLinkStart={onLinkStart}
           onLinkEnd={onLinkEnd}
         >
           <span className={classes.title}>SoulExtract</span>
-          <img
-            ref={(ref) => (this.svgElement = ref)}
+          <p
+            // ref={(ref) => (this.svgElement = ref)}
             className={classes.svg}
             viewBox="0 0 1400 92"
             // xmlns='http://www.w3.org/2000/svg'
-            src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+            // src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
             onMouseEnter={() => sounds.hover.play()}
           >
+            {" "}
+            ELECTROVERTS
             {/* <path className={classes.path} d='M0,81 L263,81 L263,46 L158,46 L158,10 L501,10' />
             <path className={classes.path} d='M290,81 L378,81 L378,37 L290,37 L290,89' />
             <path className={classes.path} d='M405,29 L405,81 L493,81 L493,29' />
@@ -140,7 +142,7 @@ class Component extends React.Component {
             <path className={classes.path} d='M953,89 L953,10 L1041,10 L1041,89 M961,46 L1033,46' />
             <path className={classes.path} d='M1126,10 L1068,10 L1068,81 L1181,81' />
             <path className={classes.path} d='M1141,10 L1400,10 M1199,18 L1199,89' /> */}
-          </img>
+          </p>
         </Link>
       </h1>
     );
