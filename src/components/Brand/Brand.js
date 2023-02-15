@@ -109,10 +109,7 @@ class Component extends React.Component {
     } = this.props;
 
     return (
-      <h1
-        className={cx(classes.root, hover && classes.hover, className)}
-        {...etc}
-      >
+      <h1 className={cx(classes.root, className)} {...etc}>
         <Link
           className={classes.link}
           href={link}
@@ -120,16 +117,18 @@ class Component extends React.Component {
           onLinkStart={onLinkStart}
           onLinkEnd={onLinkEnd}
         >
-          <span className={classes.title}>SoulExtract</span>
-          <img
+          <span className={classes.title} style={{ width: "400px" }}>
+            ELECTROVERTS
+          </span>
+          {/* <img
             ref={(ref) => (this.svgElement = ref)}
             className={classes.svg}
             viewBox="0 0 1400 92"
             // xmlns='http://www.w3.org/2000/svg'
             src="/images/electroverts.png"
             onMouseEnter={() => sounds.hover.play()}
-          >
-            {/* <path className={classes.path} d='M0,81 L263,81 L263,46 L158,46 L158,10 L501,10' />
+          > */}
+          {/* <path className={classes.path} d='M0,81 L263,81 L263,46 L158,46 L158,10 L501,10' />
             <path className={classes.path} d='M290,81 L378,81 L378,37 L290,37 L290,89' />
             <path className={classes.path} d='M405,29 L405,81 L493,81 L493,29' />
             <path className={classes.path} d='M520,2 L520,81 L599,81' />
@@ -140,7 +139,7 @@ class Component extends React.Component {
             <path className={classes.path} d='M953,89 L953,10 L1041,10 L1041,89 M961,46 L1033,46' />
             <path className={classes.path} d='M1126,10 L1068,10 L1068,81 L1181,81' />
             <path className={classes.path} d='M1141,10 L1400,10 M1199,18 L1199,89' /> */}
-          </img>
+          {/* </img> */}
         </Link>
       </h1>
     );
