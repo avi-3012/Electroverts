@@ -117,7 +117,16 @@ class Component extends React.Component {
           onLinkStart={onLinkStart}
           onLinkEnd={onLinkEnd}
         >
-          <span className={classes.title}>ELECTROVERTS</span>
+          <span
+            className={classes.title}
+            style={{
+              visibility: "visible",
+              width: "100%",
+              textAlign: "center",
+            }}
+          >
+            ELECTROVERTS
+          </span>
           <img
             ref={(ref) => (this.svgElement = ref)}
             className={classes.svg}
