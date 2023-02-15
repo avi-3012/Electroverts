@@ -34,7 +34,7 @@ class Component extends React.Component {
     const { energy, stableTime } = this.props;
 
     if (!stableTime) {
-      energy.updateDuration({ enter: 820 });
+      // energy.updateDuration({ enter: 820 });
     }
   }
 
