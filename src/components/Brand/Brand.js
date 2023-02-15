@@ -119,13 +119,11 @@ class Component extends React.Component {
         >
           <span
             className={classes.title}
-            style={
-              {
-                // visibility: "visible",
-                // width: "100%",
-                // textAlign: "center",
-              }
-            }
+            style={{
+              visibility: "visible",
+              width: "100%",
+              textAlign: "center",
+            }}
           >
             ELECTROVERTS
           </span>
@@ -137,16 +135,6 @@ class Component extends React.Component {
             // src="/images/electroverts.png"
             onMouseEnter={() => sounds.hover.play()}
           >
-            <span
-              className={classes.title}
-              style={{
-                visibility: "visible",
-                width: "100%",
-                textAlign: "center",
-              }}
-            >
-              ELECTROVERTS
-            </span>
             {/* <path className={classes.path} d='M0,81 L263,81 L263,46 L158,46 L158,10 L501,10' />
             <path className={classes.path} d='M290,81 L378,81 L378,37 L290,37 L290,89' />
             <path className={classes.path} d='M405,29 L405,81 L493,81 L493,29' />

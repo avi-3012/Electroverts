@@ -4,6 +4,6 @@ import { withSounds } from "../../tools/withSounds";
 import { Component } from "./Brand";
 import { styles } from "./Brand.styles";
 
-const Brand = withStyles(styles)(withSounds()(Component));
+const Brand = withAnimation(withStyles(styles)(withSounds()(Component)));
 
 export { Brand };
