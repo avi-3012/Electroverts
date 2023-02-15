@@ -1,12 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import cx from 'classnames';
+import React from "react";
+import PropTypes from "prop-types";
+import cx from "classnames";
 
-import { Text } from '../Text';
-import { Link } from '../Link';
+import { Text } from "../Text";
+import { Link } from "../Link";
 
 class Component extends React.Component {
-  static displayName = 'Legal';
+  static displayName = "Legal";
 
   static propTypes = {
     theme: PropTypes.object.isRequired,
@@ -17,10 +17,10 @@ class Component extends React.Component {
     className: PropTypes.any,
     opaque: PropTypes.bool,
     onLinkStart: PropTypes.func,
-    onLinkEnd: PropTypes.func
+    onLinkEnd: PropTypes.func,
   };
 
-  render () {
+  render() {
     const {
       theme,
       classes,
@@ -37,20 +37,17 @@ class Component extends React.Component {
     const show = energy.entering || energy.entered;
 
     return (
-      <p
-        className={cx(classes.root, className)}
-        {...etc}
-      >
+      <p className={cx(classes.root, className)} {...etc}>
         <Link
           className={classes.link}
-          href='https://github.com/soulextract/soulextract.com'
-          target='github'
+          href="https://github.com/soulextract/soulextract.com"
+          target="github"
           onMouseEnter={() => sounds.hover.play()}
           onLinkStart={onLinkStart}
           onLinkEnd={onLinkEnd}
         >
           <Text animation={{ animate, show, duration }} stableTime>
-            — Open Source by Contributors —
+            — Netaji Subhash University of Technology —
           </Text>
         </Link>
       </p>

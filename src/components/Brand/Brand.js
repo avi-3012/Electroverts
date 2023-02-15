@@ -126,7 +126,7 @@ class Component extends React.Component {
             className={classes.svg}
             viewBox="0 0 1400 92"
             // xmlns='http://www.w3.org/2000/svg'
-            src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+            src="/images/electroverts.png"
             onMouseEnter={() => sounds.hover.play()}
           >
             {/* <path className={classes.path} d='M0,81 L263,81 L263,46 L158,46 L158,10 L501,10' />
